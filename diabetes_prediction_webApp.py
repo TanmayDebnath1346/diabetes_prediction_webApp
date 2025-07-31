@@ -12,8 +12,8 @@ import streamlit as st
 
 
 # Load the model from the same directory
-with open('trained_model.sav', 'rb') as model_file:
-    loaded_model = pickle.load(model_file)
+loaded_model = pickle.load(open('trained_model.sav', 'rb'))
+
 
 
 # creating a function for Prediction
